@@ -1,6 +1,4 @@
 import React from 'react';
-import { MenuAlt4Icon } from '@heroicons/react/outline';
-import { UserCircleIcon } from '@heroicons/react/solid';
 
 export default function Header() {
   return (
