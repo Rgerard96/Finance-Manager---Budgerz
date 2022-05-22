@@ -5,7 +5,10 @@ import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className='font-primary flex flex-col h-screen relative'>
+    <div
+      className='font-primary flex flex-col h-screen relative'
+      style={{ WebkitTapHighlightColor: 'transparent' }}
+    >
       <Head>
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link
@@ -22,7 +25,10 @@ function MyApp({ Component, pageProps }) {
           name='apple-mobile-web-app-status-bar-style'
           content='black-translucent'
         />
-        <meta name='viewport' content='initial-scale=1, viewport-fit=cover' />
+        <meta
+          name='viewport'
+          content='initial-scale=1, viewport-fit=cover, user-scalable=no'
+        />
       </Head>
       <Header />
       <div className='flex-1 flex flex-col sm:flex-row container mx-auto max-w-6xl p-5 mt-16 standalone:mt-24'>
