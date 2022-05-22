@@ -5,7 +5,7 @@ import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className='font-primary flex flex-col h-screen'>
+    <div className='font-primary flex flex-col h-screen relative'>
       <Head>
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link
@@ -25,8 +25,8 @@ function MyApp({ Component, pageProps }) {
         <meta name='viewport' content='initial-scale=1, viewport-fit-cover' />
       </Head>
       <Header />
-      <div className='flex-1 flex flex-col sm:flex-row container mx-auto max-w-6xl p-5'>
-        <main className='flex-1 sm:order-2 sm:ml-5'>
+      <div className='flex-1 flex flex-col sm:flex-row container mx-auto max-w-6xl p-5 mt-16 standalone:mt-24'>
+        <main className='flex-1 sm:order-2 sm:ml-5 mb-20 sm:mb-0'>
           <Component {...pageProps} />
         </main>
         <MenuBar />
