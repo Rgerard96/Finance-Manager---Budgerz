@@ -8,6 +8,11 @@ module.exports = {
       fontFamily: {
         primary: ['Quicksand', 'ui-sans-serif'],
       },
+      screens: {
+        standalone: {
+          raw: '(display-mode: standalone)',
+        },
+      },
     },
   },
   plugins: [],

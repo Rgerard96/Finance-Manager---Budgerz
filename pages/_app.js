@@ -18,6 +18,11 @@ function MyApp({ Component, pageProps }) {
           rel='stylesheet'
         ></link>
         <link rel='manifest' href='manifest.json' />
+        <meta
+          name='apple-mobile-web-app-status-bar-style'
+          content='black-translucent'
+        />
+        <meta name='viewport' content='initial-scale=1, viewport-fit-cover' />
       </Head>
       <Header />
       <div className='flex-1 flex flex-col sm:flex-row container mx-auto max-w-6xl p-5'>
