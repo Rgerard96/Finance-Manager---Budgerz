@@ -1,8 +1,6 @@
 {
   "name": "Personalized income and expense - Budgerz",
   "short_name": "Budgerz",
-  "theme_color": "#ffffff",
-  "background_color": "#004740",
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/",
