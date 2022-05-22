@@ -17,6 +17,7 @@ function MyApp({ Component, pageProps }) {
           href='https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap'
           rel='stylesheet'
         ></link>
+        <link rel='manifest' href='manifest.json' />
       </Head>
       <Header />
       <div className='flex-1 flex flex-col sm:flex-row container mx-auto max-w-6xl p-5'>
