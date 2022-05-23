@@ -11,7 +11,10 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-        <div className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white rounded-lg font-bold py-3 text-center cursor-pointer' onClick={() => router.push('/inloggen')}>
+      <div
+        className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white rounded-lg font-bold py-3 text-center cursor-pointer w-fit px-4'
+        onClick={() => router.push('/inloggen')}
+      >
         Log in page
       </div>
     </div>
