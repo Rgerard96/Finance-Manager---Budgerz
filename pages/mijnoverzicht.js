@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head';
 
-export default function mijnoverzicht() {
+export default function Mijnoverzicht() {
   return (
     <div className=' p-5'>
       <Head>

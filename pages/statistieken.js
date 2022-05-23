@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head';
 
-export default function statistieken() {
+export default function Statistieken() {
   return (
     <div className=' p-5'>
       <Head>

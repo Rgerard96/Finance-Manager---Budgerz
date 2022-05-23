@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head';
 
-export default function instellingen() {
+export default function Instellingen() {
   return (
     <div className=' p-5'>
       <Head>

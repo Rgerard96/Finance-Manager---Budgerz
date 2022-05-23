@@ -3,17 +3,8 @@ import Header from '../components/Header';
 import MenuBar from '../components/MenuBar';
 import '../styles/globals.css';
 import { SessionProvider } from 'next-auth/react';
-import { useRouter } from 'next/router';
-import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
-  const router = useRouter();
-  const user = true;
-  useEffect(() => {
-    if (!user) {
-      router.push('/signin');
-    }
-  }, [router]);
   return (
     <SessionProvider session={session}>
       <div

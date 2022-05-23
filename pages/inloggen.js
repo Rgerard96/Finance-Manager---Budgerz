@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import React from 'react';
 
-export default function inloggen() {
+export default function Inloggen() {
   const router = useRouter();
   return (
     <div className='max-w-lg mx-auto'>

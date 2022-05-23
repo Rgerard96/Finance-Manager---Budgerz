@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 
-export default function registreren() {
+export default function Registreren() {
   const router = useRouter();
   return (
     <div className='max-w-lg mx-auto'>
