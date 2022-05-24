@@ -71,6 +71,18 @@ export default function Home() {
                   <p>Huur</p>
                   <p>&euro; 500,00 </p>
                 </div>
+                <div className='flex items-center justify-between py-2'>
+                  <p>Huur</p>
+                  <p>&euro; 500,00 </p>
+                </div>
+                <div className='flex items-center justify-between py-2'>
+                  <p>Huur</p>
+                  <p>&euro; 500,00 </p>
+                </div>
+                <div className='flex items-center justify-between py-2'>
+                  <p>Huur</p>
+                  <p>&euro; 500,00 </p>
+                </div>
               </div>
             </div>
           </div>
