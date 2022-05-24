@@ -14,7 +14,7 @@ export default function MenuBar() {
   const [active, setActive] = useState();
 
   return (
-    <div className='fixed sm:static bg-white left-0 bottom-0 right-0 px-5 pt-5 pb-5 standalone:pb-7'>
+    <div className='fixed sm:static bg-white left-0 bottom-0 right-0 px-5 pt-5 sm:p-0 pb-5 standalone:pb-7'>
       <div
         className={`bg-gray-100 rounded-lg p-5 border border-gray-400 sm:flex-col items-center sm:items-start justify-around sm:justify-start sm:space-y-10 ${
           router.pathname === '/inloggen'

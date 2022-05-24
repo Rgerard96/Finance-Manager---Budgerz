@@ -171,7 +171,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
           />
         </Head>
         <Header />
-        <div className='flex-1 flex flex-col sm:flex-row container mx-auto max-w-6xl p-5 mt-16 standalone:mt-24'>
+        <div className='flex-1 flex flex-col sm:flex-row container mx-auto max-w-6xl p-5 mt-12 standalone:mt-20'>
           <main className='flex-1 sm:order-2 sm:ml-5 mb-20 sm:mb-0'>
             <Component {...pageProps} />
           </main>
