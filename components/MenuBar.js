@@ -13,8 +13,6 @@ export default function MenuBar() {
   const router = useRouter();
   const [active, setActive] = useState('');
 
-  console.log(path);
-
   return (
     <div className='fixed sm:static bg-white left-0 bottom-0 right-0 px-5 pt-5 sm:p-0 pb-5 standalone:pb-7'>
       <div
