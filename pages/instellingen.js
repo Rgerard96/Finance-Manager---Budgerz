@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
@@ -13,7 +13,7 @@ export default function Instellingen() {
       </Head>
 
       <div
-        className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white rounded-lg font-bold py-3 text-center cursor-pointer w-fit px-4'
+        className='bg-gradient-to-r from-blue-500  to-red-500 text-white rounded-lg font-bold py-3 text-center cursor-pointer w-fit px-4'
         onClick={() => router.push('/inloggen')}
       >
         Log in page

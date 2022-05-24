@@ -14,22 +14,22 @@ export default function Home() {
       <header className='flex items-center justify-between mb-10'>
         <h1 className='text-xl font-bold'>Home</h1>
         <div className='flex space-x-4 items-center text-lg'>
-          <ChevronLeftIcon className='w-7 cursor-pointer text-indigo-500' />
+          <ChevronLeftIcon className='w-7 cursor-pointer text-blue-500' />
           <span>Mei 2022</span>
-          <ChevronRightIcon className='w-7 cursor-pointer text-indigo-500' />
+          <ChevronRightIcon className='w-7 cursor-pointer text-blue-500' />
         </div>
       </header>
       <main>
         <div className='mb-10'>
           <div className='mb-5 flex flex-col sm:flex-row sm:space-x-10 space-y-5 sm:space-y-0 text-white'>
-            <div className='bg-indigo-500 rounded-lg p-5 flex-1 cursor-pointer flex justify-between items-center'>
+            <div className='bg-blue-500 rounded-lg p-5 flex-1 cursor-pointer flex justify-between items-center'>
               <div className='space-y-3'>
                 <h3 className='text-lg'>Mijn inkomsten</h3>
                 <p className='font-bold text-xl'>&euro; 2.000,00</p>
               </div>
               <TrendingUpIcon className='w-10' />
             </div>
-            <div className='bg-pink-500 rounded-lg p-5 flex-1 cursor-pointer flex justify-between items-center'>
+            <div className='bg-red-500 rounded-lg p-5 flex-1 cursor-pointer flex justify-between items-center'>
               <div className='space-y-3'>
                 <h3 className='text-lg'>Mijn uitgaven</h3>
                 <p className='font-bold text-xl'>&euro; 1.500,00</p>

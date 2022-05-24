@@ -13,7 +13,7 @@ export default function Inloggen() {
             type='email'
             name='email'
             id='email'
-            className='rounded-lg border border-gray-300 p-3 focus:outline-none focus:border-indigo-500'
+            className='rounded-lg border border-gray-300 p-3 focus:outline-none focus:border-blue-500'
           />
         </div>
         <div className='flex flex-col space-y-2'>
@@ -22,12 +22,12 @@ export default function Inloggen() {
             type='password'
             name='password'
             id='password'
-            className='rounded-lg border border-gray-300 p-3 focus:outline-none focus:border-indigo-500'
+            className='rounded-lg border border-gray-300 p-3 focus:outline-none focus:border-blue-500'
           />
         </div>
       </div>
       <div
-        className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white rounded-lg font-bold py-3 text-center cursor-pointer mb-3'
+        className='bg-gradient-to-r from-blue-500  to-red-500 text-white rounded-lg font-bold py-3 text-center cursor-pointer mb-3'
         onClick={() => router.push('/')}
       >
         Inloggen
@@ -35,7 +35,7 @@ export default function Inloggen() {
       <div className='text-sm text-center w-full'>
         Heb je nog geen account?
         <span
-          className='text-indigo-500 font-bold cursor-pointer'
+          className='text-blue-500 font-bold cursor-pointer'
           onClick={() => router.push('/registreren')}
         >
           {' '}
