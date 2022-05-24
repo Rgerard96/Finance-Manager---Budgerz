@@ -48,13 +48,13 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <div className='text-center bg-gray-100 rounded-lg p-3 border border-gray-400 font-bold mb-5'>
+          <div className='text-center bg-gray-100 rounded-lg p-3 border border-gray-400 mb-5'>
             Uitgaven checklist Mei 2022
           </div>
           <div>
             <div className='space-y-2'>
               <p className='font-bold'>Vaste lasten</p>
-              <div className='divide-y'>
+              <div className='divide-y-2'>
                 <div className='flex items-center justify-between py-2'>
                   <p>Huur</p>
                   <p>&euro; 500,00 </p>
