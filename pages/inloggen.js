@@ -17,7 +17,7 @@ export default function Inloggen() {
           />
         </div>
         <div className='flex flex-col space-y-2'>
-          <label className='font-semibold'>Password</label>
+          <label className='font-semibold'>Wachtwoord</label>
           <input
             type='password'
             name='password'
