@@ -11,7 +11,7 @@ import { useRouter } from 'next/router';
 
 export default function MenuBar() {
   const router = useRouter();
-  const path = router.pathname.split('/')[1];
+  const [active, setActive] = useState('');
 
   console.log(path);
 
@@ -29,8 +29,9 @@ export default function MenuBar() {
         <Link href='/'>
           <div
             className={`cursor-pointer flex space-x-3 items-center ${
-              path === '' ? 'text-blue-500' : 'text-gray-400'
+              active === '' ? 'text-blue-500' : 'text-gray-400'
             } hover:text-blue-500`}
+            onClick={() => setActive('')}
           >
             <HomeIcon className='w-6' />
             <span className='hidden sm:block'>Home</span>
@@ -39,8 +40,9 @@ export default function MenuBar() {
         <Link href='/statistieken'>
           <div
             className={`cursor-pointer flex space-x-3 items-center ${
-              path === 'statistieken' ? 'text-blue-500' : 'text-gray-400'
+              active === 'statistieken' ? 'text-blue-500' : 'text-gray-400'
             } hover:text-blue-500`}
+            onClick={() => setActive('statistieken')}
           >
             <ChartBarIcon className='w-6' />
             <span className='hidden sm:block'>Statistieken</span>
@@ -52,8 +54,9 @@ export default function MenuBar() {
         <Link href='/mijnoverzicht'>
           <div
             className={`cursor-pointer flex space-x-3 items-center ${
-              path === 'mijnoverzicht' ? 'text-blue-500' : 'text-gray-400'
+              active === 'mijnoverzicht' ? 'text-blue-500' : 'text-gray-400'
             } hover:text-blue-500`}
+            onClick={() => setActive('mijnoverzicht')}
           >
             <CashIcon className='w-6' />
             <span className='hidden sm:block'>Mijn overzicht</span>
@@ -62,8 +65,9 @@ export default function MenuBar() {
         <Link href='/instellingen'>
           <div
             className={`cursor-pointer flex space-x-3 items-center ${
-              path === 'instellingen' ? 'text-blue-500' : 'text-gray-400'
+              active === 'instellingen' ? 'text-blue-500' : 'text-gray-400'
             } hover:text-blue-500`}
+            onClick={() => setActive('instellingen')}
           >
             <CogIcon className='w-6' />
             <span className='hidden sm:block'>Instellingen</span>
