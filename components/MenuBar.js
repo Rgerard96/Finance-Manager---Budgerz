@@ -11,7 +11,9 @@ import { useRouter } from 'next/router';
 
 export default function MenuBar() {
   const router = useRouter();
-  const [active, setActive] = useState();
+  const path = router.pathname.split('/')[1];
+
+  console.log(path);
 
   return (
     <div className='fixed sm:static bg-white left-0 bottom-0 right-0 px-5 pt-5 sm:p-0 pb-5 standalone:pb-7'>
@@ -25,38 +27,46 @@ export default function MenuBar() {
         }`}
       >
         <Link href='/'>
-          <div className='cursor-pointer flex space-x-3 items-center text-gray-400 group'>
-            <HomeIcon className='w-6 text-blue-500 ' />
-            <span className='hidden sm:block group-hover:text-blue-500'>
-              Home
-            </span>
+          <div
+            className={`cursor-pointer flex space-x-3 items-center ${
+              path === '' ? 'text-blue-500' : 'text-gray-400'
+            } hover:text-blue-500`}
+          >
+            <HomeIcon className='w-6' />
+            <span className='hidden sm:block'>Home</span>
           </div>
         </Link>
         <Link href='/statistieken'>
-          <div className='cursor-pointer flex space-x-3 items-center text-gray-400 group'>
-            <ChartBarIcon className='w-6 text-gray-400' />
-            <span className='hidden sm:block group-hover:text-blue-500'>
-              Statistieken
-            </span>
+          <div
+            className={`cursor-pointer flex space-x-3 items-center ${
+              path === 'statistieken' ? 'text-blue-500' : 'text-gray-400'
+            } hover:text-blue-500`}
+          >
+            <ChartBarIcon className='w-6' />
+            <span className='hidden sm:block'>Statistieken</span>
           </div>
         </Link>
         <div className='sm:hidden bg-gradient-to-r from-blue-500  to-red-500 rounded-full p-3 -my-3'>
           <PlusIcon className='w-6 text-white' />
         </div>
         <Link href='/mijnoverzicht'>
-          <div className='cursor-pointer flex space-x-3 items-center text-gray-400 group'>
-            <CashIcon className='w-6 text-gray-400' />
-            <span className='hidden sm:block group-hover:text-blue-500'>
-              Mijn overzicht
-            </span>
+          <div
+            className={`cursor-pointer flex space-x-3 items-center ${
+              path === 'mijnoverzicht' ? 'text-blue-500' : 'text-gray-400'
+            } hover:text-blue-500`}
+          >
+            <CashIcon className='w-6' />
+            <span className='hidden sm:block'>Mijn overzicht</span>
           </div>
         </Link>
         <Link href='/instellingen'>
-          <div className='cursor-pointer flex space-x-3 items-center text-gray-400 group'>
-            <CogIcon className='w-6 text-gray-400' />
-            <span className='hidden sm:block group-hover:text-blue-500'>
-              Instellingen
-            </span>
+          <div
+            className={`cursor-pointer flex space-x-3 items-center ${
+              path === 'instellingen' ? 'text-blue-500' : 'text-gray-400'
+            } hover:text-blue-500`}
+          >
+            <CogIcon className='w-6' />
+            <span className='hidden sm:block'>Instellingen</span>
           </div>
         </Link>
       </div>
