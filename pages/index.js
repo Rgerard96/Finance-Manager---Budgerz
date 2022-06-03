@@ -3,9 +3,12 @@ import { useRouter } from 'next/router';
 import {
   ChevronLeftIcon,
   ChevronRightIcon,
+  EmojiHappyIcon,
   TrendingDownIcon,
   TrendingUpIcon,
 } from '@heroicons/react/solid';
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { Doughnut } from 'react-chartjs-2';
 
 export default function Home() {
   const router = useRouter();
@@ -41,13 +44,34 @@ export default function Home() {
               </div>
               <TrendingDownIcon className='w-10' />
             </div>
+            <div className='bg-green-500 rounded-lg p-5 flex-1 cursor-pointer flex justify-between items-center'>
+              <div className='space-y-3'>
+                <h3 className='text-lg'>Resterend bedrag</h3>
+                <p className='font-bold text-xl'>&euro; 500,00</p>
+              </div>
+              <EmojiHappyIcon className='w-10' />
+            </div>
           </div>
-          <div className='flex items-center justify-between sm:justify-end sm: space-x-5 font-bold text-lg'>
-            <p>Resterend bedrag</p>
-            <p>&euro; 500,00 </p>
-          </div>
+        </div>
+        <div>
+          <Doughnut data={data} />
         </div>
       </main>
     </div>
   );
 }
+
+ChartJS.register(ArcElement, Tooltip, Legend);
+
+export const data = {
+  labels: ['Inkomsten', 'Uitgaven', 'Resterend'],
+  datasets: [
+    {
+      label: 'Budget',
+      data: [2000, 1500, 500],
+      backgroundColor: ['#bfdbfe', '#fecaca', '#bbf7d0'],
+      borderColor: ['#3b82f6', '#ef4444', '#22c55e'],
+      borderWidth: 1,
+    },
+  ],
+};

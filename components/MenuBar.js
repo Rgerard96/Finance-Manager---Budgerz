@@ -16,9 +16,8 @@ export default function MenuBar() {
   console.log(path);
 
   return (
-    <div className='fixed sm:static bg-white left-0 bottom-0 right-0 px-5 pt-5 sm:p-0 pb-5 standalone:pb-7'>
       <div
-        className={`fixed left-0 bottom-0 right-0 border-t bg-white p-5 standalone:pb-10 sm:flex-col items-center sm:items-start justify-around sm:justify-start sm:space-y-10 ${
+        className={`fixed sm:hidden left-0 bottom-0 right-0 border-t bg-white p-5 standalone:pb-10 sm:flex-col items-center sm:items-start justify-around sm:justify-start sm:space-y-10 ${
           router.pathname === '/inloggen'
             ? 'hidden'
             : router.pathname === '/registreren'
@@ -27,12 +26,12 @@ export default function MenuBar() {
         }`}
       >
         <Link href='/'>
-          <div className='flex space-x-3 items-center hover:text-blue-500'>
+          <div className='flex space-x-3 items-center'>
             <HomeIcon className='w-7' />
           </div>
         </Link>
         <Link href='/statistieken'>
-          <div className='flex space-x-3 items-center hover:text-blue-500'>
+          <div className='flex space-x-3 items-center'>
             <ChartBarIcon className='w-7' />
           </div>
         </Link>
@@ -40,16 +39,15 @@ export default function MenuBar() {
           <PlusIcon className='w-7 text-white' />
         </div>
         <Link href='/mijnoverzicht'>
-          <div className='flex space-x-3 items-center hover:text-blue-500'>
+          <div className='flex space-x-3 items-center'>
             <CashIcon className='w-7' />
           </div>
         </Link>
         <Link href='/instellingen'>
-          <div className='flex space-x-3 items-center hover:text-blue-500'>
+          <div className='flex space-x-3 items-center'>
             <CogIcon className='w-7' />
           </div>
         </Link>
       </div>
-    </div>
   );
 }
