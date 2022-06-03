@@ -18,7 +18,7 @@ export default function MenuBar() {
   return (
     <div className='fixed sm:static bg-white left-0 bottom-0 right-0 px-5 pt-5 sm:p-0 pb-5 standalone:pb-7'>
       <div
-        className={`fixed left-0 bottom-0 right-0 border-t bg-white py-8 sm:flex-col items-center sm:items-start justify-around sm:justify-start sm:space-y-10 ${
+        className={`fixed left-0 bottom-0 right-0 border-t bg-white p-5 standalone:pb-10 sm:flex-col items-center sm:items-start justify-around sm:justify-start sm:space-y-10 ${
           router.pathname === '/inloggen'
             ? 'hidden'
             : router.pathname === '/registreren'
